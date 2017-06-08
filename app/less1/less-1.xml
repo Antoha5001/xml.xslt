@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<time_table xmlns:o= "http://www.mysupersite.ru/ns/courses/xml/office"
+            xmlns:l = "http://www.mysupersite.ru/ns/courses/xml/lab1">
+    <l:lesson no="1">
+        <l:date>2017-06-08</l:date>
+        <l:time>12:18:00</l:time>
+    </l:lesson>
+    <l:lesson no="2">
+        <l:date>2017-06-08</l:date>
+        <l:time>14:18:00</l:time>
+    </l:lesson>
+    <o:offices>
+        <o:office code="БК">
+            <o:name>комплекс "Бакунский"</o:name>
+            <o:address>ул. Баккунская, 17</o:address>
+        </o:office>
+        <o:office code="РА">
+            <o:name>комплекс "Радио"</o:name>
+            <o:address>ул. Радио, д. 222</o:address>
+        </o:office>
+    </o:offices>
+</time_table>

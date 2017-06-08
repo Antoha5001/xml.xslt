@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE time_table [
+		<!ELEMENT time_table (lesson+, offices)>
+		<!ELEMENT lesson (date, time)>
+		<!ATTLIST lesson no CDATA #REQUIRED>
+		<!ELEMENT date (#PCDATA)>
+		<!ELEMENT time (#PCDATA)>
+
+		<!ELEMENT offices (office+)>
+		<!ELEMENT office (name,address)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT address (#PCDATA)>
+		<!ATTLIST office code CDATA #REQUIRED>
+		]>
+<time_table>
+	<lesson no="1">
+		<date>2017-06-08</date>
+		<time>12:18:00</time>
+	</lesson>
+	<lesson no="2">
+		<date>2017-06-08</date>
+		<time>14:18:00</time>
+	</lesson>
+	<offices>
+		<office code="БК">
+			<name>комплекс "Бакунский"</name>
+			<address>ул. Баккуaнская, 17</address>
+		</office>
+		<office code="РА">
+			<name>комплекс "Радио"</name>
+			<address>ул. Радио, д. 222</address>
+		</office>
+	</offices>
+</time_table>

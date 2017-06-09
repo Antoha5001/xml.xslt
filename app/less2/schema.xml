@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs=" htpp://cbfhgh ">
+	<xs:element name="страна" type="Страна"/>
+	<xs:complexType name="Страна">
+		<xs:sequence>
+			<xs:element name="название" type="xs:string"></xs:element>
+			<xs:element name="население" type="xs:decimal"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema >

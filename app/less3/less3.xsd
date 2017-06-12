@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="time_table" type="time_tableType"/>
+  <xs:complexType name="time_tableType">
+    <xs:sequence>
+      <xs:element type="lessonType" name="lesson" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="officesType" name="offices"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="officesType">
+    <xs:sequence>
+      <xs:element type="officeType" name="office" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="lessonType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="date"/>
+      <xs:element name="time">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="12:18:00"/>
+            <xs:enumeration value="14:18:00"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="no" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="officeType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="комплекс &quot;Бакунский&quot;"/>
+            <xs:enumeration value="комплекс &quot;Радио&quot;"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="address">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ул. Баккуaнская, 17"/>
+            <xs:enumeration value="ул. Радио, д. 222"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="code" use="optional"/>
+  </xs:complexType>
+</xs:schema>

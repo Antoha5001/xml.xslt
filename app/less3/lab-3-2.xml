@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<people
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="lab-3-2.xsd">
+    <name>sdf</name>
+    <family>sdf</family>
+    <age>ff</age>
+    <bithday>sfsdf</bithday>
+</people>

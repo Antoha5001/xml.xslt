@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<personal
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="lab-3-1.xsd">
+  <employee id="e-1">
+      <phone mobile="true">123</phone>
+      <email>sdfsfd</email>
+      <name>
+          <first>Adfg</first>
+          <last>xcvxc</last>
+          <middle>sdfsf</middle>
+      </name>
+      <age>111</age>
+  </employee>
+  <employee id="e-2">
+      <phone>123</phone>
+      <email>sdfsfd</email>
+      <name>
+          <first>Adfg</first>
+          <last>xcvxc</last>
+          <middle>sdfsf</middle>
+      </name>
+  </employee>
+</personal>

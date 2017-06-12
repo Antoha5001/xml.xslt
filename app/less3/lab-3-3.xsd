@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:group name="dateGroup">
+        <xsd:sequence>
+            <xsd:element name="date" type="xsd:string"/>
+            <xsd:element name="time" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:complexType name="lessonType">
+        <xsd:sequence>
+            <xsd:group ref="dateGroup"/>
+        </xsd:sequence>
+        <xsd:attribute name="no" type="xsd:integer"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="time_tableType">
+        <xsd:sequence>
+            <xsd:element name="lesson" type="lessonType" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="officeType">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="address" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="code" type="xsd:string"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="officesType">
+        <xsd:sequence>
+            <xsd:element name="office" type="officeType" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tableExp">
+        <xsd:complexContent>
+            <xsd:extension base="time_tableType">
+                <xsd:sequence>
+                    <xsd:element name="offices" type="officesType"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:element name="time_table" type="tableExp"/>
+</xsd:schema>
+
+
+

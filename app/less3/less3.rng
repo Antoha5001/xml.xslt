@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="time_table">
+            <attribute name="xsi:noNamespaceSchemaLocation">
+                <data type="NCName"/>
+            </attribute>
+            <oneOrMore>
+                <element name="lesson">
+                    <attribute name="no">
+                        <data type="integer"/>
+                    </attribute>
+                    <element name="date">
+                        <data type="NMTOKEN"/>
+                    </element>
+                    <element name="time">
+                        <data type="NMTOKEN"/>
+                    </element>
+                </element>
+            </oneOrMore>
+            <element name="offices">
+                <oneOrMore>
+                    <element name="office">
+                        <attribute name="code">
+                            <data type="NCName"/>
+                        </attribute>
+                        <element name="name">
+                            <text/>
+                        </element>
+                        <element name="address">
+                            <text/>
+                        </element>
+                    </element>
+                </oneOrMore>
+            </element>
+        </element>
+    </start>
+</grammar>

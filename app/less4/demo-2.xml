@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="windows-1251" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <?xml-stylesheet type="text/xsl" href="demo-2.xsl" ?>
 
-<demo message="Мега документ">
-	<test message="hello, world"
-		xmlns="http://igor-borisov.ru/namespace1">123</test>
+<demo message="РњРµРіР° РґРѕРєСѓРјРµРЅС‚">
+	<test message="hello, world" xmlns="http://igor-borisov.ru/namespace1">123</test>
 		
-	<!-- Этот пример показывает использование пространств имен -->	
+	<!-- Р­С‚РѕС‚ РїСЂРёРјРµСЂ РїРѕРєР°Р·С‹РІР°РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІ РёРјРµРЅ -->	
 		
-	<test message="Привет МИР"
-		xmlns="http://igor-borisov.ru/namespace2">987</test>
+	<test message="hello, world" xmlns="http://igor-borisov.ru/namespace2">987</test>
+	<test message="РџСЂРёРІРµС‚ РњРР " xmlns="http://igor-borisov.ru/namespace2">987</test>
 </demo>

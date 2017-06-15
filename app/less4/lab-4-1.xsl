@@ -4,7 +4,7 @@
 
 	<!--Шаблон корневого элемента-->
 	<xsl:template match="/">
-        <xsl:value-of select="title"/>
+		«Привет мир!»
 	</xsl:template>
 
 </xsl:stylesheet>

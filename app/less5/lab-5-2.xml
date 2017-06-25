@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="lab-5-2.xsl"?>
+
+<lab5_2>
+	<element price="200" name="computer" value="Intel core 8"/>
+	<element price="220" name="monitor" value="Acer"/>
+	<element price="150" name="printer" value="Epson"/>
+	<element price="100" name="keyboard" value="104 keys"/>
+	<element price="20" name="mouse" value="laser"/>
+	<element price="160" name="phone" value="Nokia lumia"/>
+</lab5_2>

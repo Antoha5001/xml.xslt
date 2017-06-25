@@ -28,7 +28,14 @@
 				<xsl:apply-templates select="./menuItem" />
 			</ul>
 		</li>
+		<xsl:sort
+				select="exp"
+				lang="code"
+				data-type="text|number|qname"
+				order="ascending|descending"
+				case-order="lower-first|upper-first"/>
 	</xsl:template>
+
 </xsl:stylesheet>
 
 							  

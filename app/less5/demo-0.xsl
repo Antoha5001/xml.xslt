@@ -6,5 +6,10 @@
 	</xsl:template>
 	<xsl:template match="/pricelist/book[price = 200]">
 		Это Книга с Ценой!
-	</xsl:template>	
+		<xsl:for-each select="title">
+
+		</xsl:for-each>
+
+	</xsl:template>
+
 </xsl:stylesheet>

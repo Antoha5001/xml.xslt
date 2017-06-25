@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lab5_1>
+	<element name="computer" value="Intel Core"/>
+	<element name="monitor" value="Iiyama ProLite X2783HSU"/>
+	<element name="printer" value="Epson stylus E80"/>
+</lab5_1>

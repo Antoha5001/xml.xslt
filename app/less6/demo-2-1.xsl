@@ -5,6 +5,11 @@
 		name="myKey" 
 		match="/pricelist/book"
 		use="price" />
+	<xsl:key
+		name="myKey2"
+		match="/pricelist/book"
+		use="concat(price, ' : ', author)" />
+
 
 	<xsl:template match="/">
 		<html>
@@ -19,7 +24,7 @@
 					штук</h1>
 				<hr />
 				<ul>
-					<xsl:apply-templates select="key('myKey', 250)" />
+					<xsl:apply-templates select="key('myKey2', '250:Алекс Хоумер')" />
 				</ul>
 			</body>
 		</html>

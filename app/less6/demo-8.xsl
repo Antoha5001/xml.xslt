@@ -13,6 +13,7 @@
 	</xsl:template>
 	<xsl:template match="book">
 		<li>
+			<b>ID<xsl:value-of select="generate-id()" /></b>
 			<xsl:value-of select="author" />
 			<xsl:text>, </xsl:text>
 			<xsl:value-of select="title" />

@@ -24,23 +24,23 @@
 					штук</h1>
 				<hr />
 				<ul>
-					<xsl:apply-templates select="key('myKey2', '250:Алекс Хоумер')" />
+					<xsl:apply-templates select="key('myKey2', '200 : Алекс Хоумер')" />
 				</ul>
 			</body>
 		</html>
 	</xsl:template>
 
-	
-	<xsl:template match="book">
-		<li>
-			<xsl:for-each select="*">
-				<xsl:value-of select="name()" />
-				<xsl:text>: </xsl:text>
-				<xsl:value-of select="." />
-				<br />
-			</xsl:for-each>
-		</li>
-	</xsl:template>		
+
+	<!--<xsl:template match="book">-->
+		<!--<li>-->
+			<!--<xsl:for-each select="*">-->
+				<!--<xsl:value-of select="name()" />-->
+				<!--<xsl:text>: </xsl:text>-->
+				<!--<xsl:value-of select="." />-->
+				<!--<br />-->
+			<!--</xsl:for-each>-->
+		<!--</li>-->
+	<!--</xsl:template>-->
 </xsl:stylesheet>
 
 							  

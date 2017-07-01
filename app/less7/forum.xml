@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="forum.xsl" ?>
+<items>
+	<item id="1" pid="0" author="Вася">Привет всем!</item>
+	<item id="2" pid="1" author="Федя">ну, привет</item>
+	<item id="3" pid="2" author="Вова">Не ну, привет, а Привет!</item>
+	<item id="4" pid="3" author="Зина">Может у него настроение плохое</item>
+	<item id="5" pid="2" author="Петя">Чё так не весело?</item>
+
+</items>
+
+<!--
+<ul>
+	<li id=""><h3><span>Вася пупкин</span> пишет:</h3><p>Привет всем!</p></li>
+	<ul>
+		<li id=""><h3><span>Вася пупкин</span> пишет:</h3><p>Привет всем!</p></li>
+	</ul>
+</ul>
+-->

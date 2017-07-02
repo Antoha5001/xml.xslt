@@ -19,11 +19,13 @@
 			</body>
 		</html>
 	</xsl:template>
+
 	<xsl:template match="items">
 		<xsl:apply-templates select="item[@pid = 0]"/>
 	</xsl:template>
 
 	<xsl:template match="item">
+
 		<xsl:variable name="id" select="@id"/>
 		<li id="{$id}">
 			<h3><span><xsl:value-of select="@author"/></span> пишет:</h3>

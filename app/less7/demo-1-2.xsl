@@ -41,7 +41,7 @@
 								<xsl:call-template name="price">
 									<xsl:with-param name="value" select="$currentBook/price div $USD" />
 									<xsl:with-param name="symbol" select="'$'" />
-								</xsl:call-template>								
+								</xsl:call-template>
 								<xsl:text>)</xsl:text>
 								
 							</td>							

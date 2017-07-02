@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="forum-result2.xsl" ?>
+<html>
+	<body>
+		<ul>
+			<li id="1">
+				<h3>
+					<span>Вася</span> пишет:</h3><p>Привет всем!</p>
+				<ul>
+					<li id="2">
+						<h3>
+							<span>Федя</span> пишет:</h3><p>ну, привет</p>
+						<ul>
+							<li id="3">
+								<h3>
+									<span>Вова</span> пишет:</h3><p>Не ну, привет, а Привет!</p>
+								<ul>
+									<li id="4">
+										<h3>
+											<span>Зина</span> пишет:</h3><p>Может у него настроение плохое</p>
+									</li>
+								</ul>
+							</li>
+							<li id="5">
+								<h3>
+									<span>Петя</span> пишет:</h3><p>Чё так не весело?</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

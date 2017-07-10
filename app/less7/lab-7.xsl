@@ -10,8 +10,9 @@
 	<xsl:key name="ixCity" match="/lab7/item" use="@city"/>
 	<xsl:key name="ixOrgInCity" match="/lab7/item" use="concat(@city,':',@org)"/>
 
-	<xsl:variable name="city" select="/lab7/item/@city[
-	generate-id(.) = generate-id(key('ixCity',.)/@city)]"/>
+	<!--Переменная 1-->
+	<xsl:variable name="cities" select="/lab7/item[
+	generate-id(.) = generate-id(key('ixCity',@city))]"/>
 	<!--<xsl:key name="ixOrg" match="key('ixCity','Москва')" use="."/>-->
 
 	<!-- Шаблон корневого элемента -->
@@ -19,10 +20,31 @@
 		<html>
 			<body>
 				<ul>
-					<xsl:value-of select="key('ixCity','Москва')/@org"/>
-					<xsl:value-of select="key('ixOrgInCity','Москва:ООО Рога и Копыта')/@title"/>
-					<p><xsl:value-of select="/lab7/item/@city[generate-id(.)]"/></p>
-					<p><xsl:value-of select="$city"/></p>
+					<xsl:for-each select="$cities">
+						<xsl:variable name="curCity" select="@city"/>
+
+						<!--Переменная 2-->
+						<xsl:variable name="orgs" select="/lab7/item[
+						generate-id(.) = generate-id(key('ixOrgInCity',concat($curCity,':',@org)))]"/>
+						<li><xsl:value-of select="@city"/>
+							<ul>
+								<xsl:for-each select="$orgs">
+									<li>
+										<xsl:value-of select="@org"/>
+										<ul>
+
+									<xsl:for-each select="/lab7/item[@city = current()/@city and @org = current()/@org]">
+										<xsl:sort select="./@title"/>
+											<li><xsl:value-of select="./@title"/></li>
+									</xsl:for-each>
+										</ul>
+									</li>
+								</xsl:for-each>
+
+							</ul>
+						</li>
+
+					</xsl:for-each>
 				</ul>
 
 			</body>
